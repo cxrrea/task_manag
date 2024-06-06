@@ -1,0 +1,251 @@
+/* Estilo geral */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body{
+  height: 900vh;
+  background: rgb(197,182,208);
+  background: linear-gradient(90deg, rgba(197,182,208,1) 0%, rgba(173,148,233,1) 100%);
+}
+
+nav.menu_lateral{
+  width: 78px;
+  height: 100%;
+  background-color: rgb(37, 36, 36);
+  padding: 40px 0 30px 1%;
+  box-shadow: 1px 0px 0px;
+  color: #8e078e;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+
+nav.menu_lateral.expandir{
+  width: 400px;
+}
+
+.btn_expand{
+  width: 100%;
+  padding-left: 11px;
+}
+
+.btn_expand > i{
+  color: rgb(218, 218, 218);
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.btn_expand i:hover{
+  color: rgb(255, 255, 255);
+  transition: 1s;
+}
+
+.menu_lateral ul{
+  height: 100%;
+  list-style-type: none;
+
+}
+
+ul li.item_menu a{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 4%;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+ul li.item_menu{
+  transition: 800ms;
+}
+
+ul li.ativo{
+  background-color: rgb(101, 46, 95);
+}
+
+ul li.item_menu:hover{
+  background:  #8e078e;
+}
+
+ul li.item_menu a .txt_link{
+  margin-left: 80px;
+  transition: 800ms;
+  opacity: 0;
+  
+}
+
+nav.menu_lateral.expandir .txt_link{
+  margin-left: 40px;
+  opacity: 3;
+}
+
+
+ul li.item_menu a .icon > i{
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+button {
+  background-color: #fdfdfd;
+  color: #102f5e;
+  border: 3px solid #102f5e;
+  border-radius: 10px;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+button:hover {
+  background-color: #102f5e;
+}
+
+button:hover > i {
+  color: #fff;
+}
+
+button i {
+  pointer-events: none;
+  color: #102f5e;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+.todo-container {
+  max-width: 450px;
+  margin: 3rem auto 0;
+  background-color: #fdfdfd;
+  padding: 1.5rem;
+  border-radius: 15px;
+  backdrop-filter: blur(1rem);
+}
+
+.todo-container header {
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-container header h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 800;
+}
+
+/* Todo Form */
+#todo-form,
+#edit-form {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#todo-form p,
+#edit-form p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-control {
+  display: flex;
+}
+
+.form-control input {
+  margin-right: 0.3rem;
+}
+
+#cancel-edit-btn {
+  margin-top: 1rem;
+  color: #444;
+}
+
+/* Todo Toolbar */
+#toolbar {
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+}
+
+#toolbar h4 {
+  margin-bottom: 0.5rem;
+}
+
+#search {
+  border-right: 1px solid #ddd;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+#search form {
+  display: flex;
+}
+
+#search input {
+  width: 100%;
+  margin-right: 0.3rem;
+}
+
+#filter {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter select {
+  flex: 1;
+}
+
+/* Todo List */
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.todo h3 {
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.todo button {
+  margin-left: 0.4rem;
+}
+
+.done {
+  background: #395169;
+}
+
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+
+

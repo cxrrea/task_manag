@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gerenciador de Chamados</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="menu_lateral">
+      <div class="btn_expand">
+        <i class="bi bi-list" id="btn_expandir"></i>
+      </div>
+      <ul>
+        <li class="item_menu ativo" id="menu-todos">
+          <a href="#">
+            <span class="icon"><i class="bi bi-house-door"></i></span>
+            <span class="txt_link">Home</span>
+          </a>
+        </li>
+
+        <li class="item_menu" id="menu-todos">
+          <a href="#">
+            <span class="icon"><i class="bi bi-card-list"></i></span>
+            <span class="txt_link">Todos</span>
+          </a>
+        </li>
+
+        <li class="item_menu" id="menu-concluidos">
+          <a href="concluidos.html">
+            <span class="icon"><i class="bi bi-clipboard2-check"></i></span>
+            <span class="txt_link">Concluidos</span>
+          </a>
+        </li>
+
+        <li class="item_menu" id="menu-pendentes">
+          <a href="pendentes.html">
+            <span class="icon"><i class="bi bi-pencil-square"></i></span>
+            <span class="txt_link">Pendentes</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="todo-container">
+      <header>
+        <h1>TASK MANAGER</h1>
+      </header>
+      <form id="todo-form">
+        <p>Add task</p>
+        <div class="form-control">
+          <input type="text" id="todo-input" placeholder="Task name..." />
+          <button type="submit">
+            <i class="bi bi-clipboard2-plus"></i>
+          </button>
+        </div>
+      </form>
+      <form id="edit-form" class="hide">
+        <p>Edit</p>
+        <div class="form-control">
+          <input type="text" id="edit-input" />
+          <button type="submit"><i class="bi bi-floppy"></i></button>
+        </div>
+        <button id="cancel-edit-btn">Cancel</button>
+      </form>
+      <div id="toolbar">
+        <div id="search">
+          <h4>Search</h4>
+          <form>
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Find your task..."
+            />
+            <button id="erase-button">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div id="todo-list"></div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
