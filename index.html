@@ -29,21 +29,18 @@
             <span class="txt_link">Home</span>
           </a>
         </li>
-
         <li class="item_menu" id="menu-todos">
           <a href="#">
             <span class="icon"><i class="bi bi-card-list"></i></span>
             <span class="txt_link">Todos</span>
           </a>
         </li>
-
         <li class="item_menu" id="menu-concluidos">
           <a href="concluidos.html">
             <span class="icon"><i class="bi bi-clipboard2-check"></i></span>
             <span class="txt_link">Concluidos</span>
           </a>
         </li>
-
         <li class="item_menu" id="menu-pendentes">
           <a href="pendentes.html">
             <span class="icon"><i class="bi bi-pencil-square"></i></span>
@@ -59,6 +56,9 @@
       </header>
       <form id="todo-form">
         <p>Add task</p>
+        <div class="form-control">
+          <input type="text" id="todo-id" placeholder="Task ID..." />
+        </div>
         <div class="form-control">
           <input type="text" id="todo-input" placeholder="Task name..." />
           <button type="submit">
@@ -89,10 +89,8 @@
           </form>
         </div>
       </div>
-
       <div id="todo-list"></div>
     </div>
-
     <script src="./index.js"></script>
   </body>
 </html>
