@@ -7,5 +7,7 @@
 - JAVASCRIPT
 - BOOTSTRAP
 
+### Link do Projeto:
+[Clique aqui para visitar ](https://taskmanag.vercel.app/)
 
 
