@@ -9,8 +9,8 @@
 
 body {
   height: 90vh;
-  background: rgb(197,182,208);
-  background: linear-gradient(90deg, rgba(197,182,208,1) 0%, rgb(216, 148, 233) 100%);
+  background: rgb(235, 231, 238);
+  background: linear-gradient(90deg, rgb(238, 224, 248) 0%, rgb(226, 190, 235) 100%);
 }
 
 nav.menu_lateral {
@@ -134,6 +134,9 @@ select {
   margin: 3rem auto 0;
   background-color: #fdfdfd;
   padding: 1.5rem;
+  -webkit-box-shadow: 1px -2px 111px 7px rgba(130,130,130,1);
+  -moz-box-shadow: 1px -2px 111px 7px rgba(130,130,130,1);
+  box-shadow: 1px -2px 111px 7px rgba(130,130,130,1);
   border-radius: 15px;
   backdrop-filter: blur(1rem);
   position: relative;
