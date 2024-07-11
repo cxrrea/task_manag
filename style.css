@@ -262,9 +262,8 @@ select {
   }
 
   .todo button {
-    margin-left: 0.5rem;
-    margin-top: 15px;
-    width: 30px;
+    margin-top: 20px;
+    width: 27px;
   }
 
   .todo-container {
