@@ -254,3 +254,64 @@ select {
 .todo button {
   margin-left: 0.5rem;
 }
+
+@media (max-width: 700px) {
+  .todo-container {
+    max-width: 300px;
+    margin-left: 7rem;
+    margin-top: 5rem;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    -webkit-box-shadow: 1px -2px 111px 7px rgba(130,130,130,1);
+    -moz-box-shadow: 1px -2px 111px 7px rgba(130,130,130,1);
+    box-shadow: 1px -2px 111px 7px rgba(130,130,130,1);
+    border-radius: 15px;
+    backdrop-filter: blur(1rem);
+    position: relative;
+    z-index: 1; 
+  }
+
+  #todo-form input,
+  #edit-form input {
+  margin-left: -2rem;
+  border: 2px solid #000000;}
+
+  #toolbar #search {
+    display: flex;
+    flex-direction: column;
+    width: 10px;
+    margin-right: 15rem;
+  }
+
+ 
+
+  .todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .todo-container header h1 {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+  }
+
+
+
+  .menu_lateral {
+    width: 50px; 
+    padding: 15px 0 5px 1%; 
+  }
+
+  .btn_expand > i {
+    font-size: 25px; 
+  }
+
+  .menu_lateral.expandir {
+    width: 180px; /* Adjusted expanded width */
+  }
+
+  ul li.item_menu a .txt_link {
+    margin-left: 40px; /* Further adjusted margin */
+  }
+}
