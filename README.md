@@ -10,6 +10,6 @@
 - VERCEL
 
 ### Link do Projeto🔗 :
-[Clique aqui para visitar o projeto](https://taskmanag.vercel.app/)
+[Clique aqui para visitar o projeto](https://gerenciadorchamados-glt8wam7s-joaos-projects-b89c45f2.vercel.app/)
 
 
